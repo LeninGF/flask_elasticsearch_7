@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Insertar dato</title>
+</head>
+<body>
+    <form method="post">
+
+        <label>index_name: </label><input name="index_name" type="text">
+        <label>doc_type: </label><input name="doc_type" type="text">
+        <label>id_number: </label><input name="id_number" type="numeric">
+        <br>
+        <br>
+        <label>name: </label><input name="name" type="text"><br>
+        <label>height: </label><input name="height" type="number"><br>
+        <label>mass: </label><input name="mass" type="number"><br>
+        <label>hair_color: </label><input name="hair_color" type="text"><br>
+        <label>skin_color: </label><input name="skin_color" type="text"><br>
+        <label>eye_color: </label><input name="eye_color" type="text"><br>
+        <label>birth_year: </label><input name="birth_year" type="text"><br>
+{#        <label>gender: </label><input name="gender" type="text"><br>#}
+{#        <label>homeworld: </label><input name="homeworld" type="url"><br>#}
+{#        <label>vehicles: </label><input name="vehicles" type="text"><br>#}
+        <input type="submit">
+        <br>
+        <br>
+        <pre id="json">{{ response }}</pre>
+    </form>
+
+</body>
+</html>

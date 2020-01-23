@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Indexacion</title>
+</head>
+<body>
+<p> Indexando datos desde: <a href="http://swapi.co/api/people/"> http://swapi.co/api/people/'</a></p>
+    <form method="post">
+        <label>dato#: </label>{{ dato }}<br>
+        <label>index_name: </label><input name="index_name" type="text">
+        <label>doc_type: </label><input name="doc_type" type="text">
+        <input type="submit">
+        <br>
+        <br>
+        <pre id="json">{{ response }}</pre>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Lectura</title>
+</head>
+<body>
+<p> Escriba el index, tipo de documento y un numero de ID:</p>
+    <form method="post">
+        <label>index_name: </label><input name="index_name" type="text">
+        <label>doc_type: </label><input name="doc_type" type="text">
+        <label>id: </label><input name="id_number" type="number">
+        <input type="submit">
+        <br>
+        <br>
+        <pre id="json">{{ resultado }}</pre>
+        <ol>
+            {% for key, value in resultado._source.items() %}
+            <li>{{ key }} :  {{ value }}  </li>
+            {% endfor %}
+        </ol>
+
+    </form>
+
+</body>
+</html>

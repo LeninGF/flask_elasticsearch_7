@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Searching</title>
+</head>
+<body>
+<p> Escriba el index, tipo de documento y un numero de ID:</p>
+    <form method="post">
+        <label>index_name: </label><input name="index_name" type="text">
+{#        <label>doc_type: </label><input name="doc_type" type="text">#}
+        <br>
+        <br>
+        <label>search: </label><input name="search_string" type="text">
+        <input type="submit" value="search">
+        <pre id="json">Raw json: {{ resultado }}</pre><br>
+        Total Hits: {{ resultado.hits.total.value }}
+        <ol>
+            {% for value in resultado.hits.hits %}
+            <li> id: {{ value._id }}, name: {{ value._source.name }}, score: {{ value._score }}  </li>
+            {% endfor %}
+        </ol>
+{# resultado.hits.hits._id  esta en formato de arreglo#}
+{# resultado.hits.hits._source.name esta dentro de un arreglo#}
+    </form>
+
+</body>
+</html>
