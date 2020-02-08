@@ -34,3 +34,5 @@ swapi.co y los almacena.
 * delete_index and delete_document: permite eliminar un index existente y un documento existente, respectivamente.
 
 
+## References:
+This example is heavily based on the tutorial by: https://tryolabs.com/blog/2015/02/17/python-elasticsearch-first-steps/
